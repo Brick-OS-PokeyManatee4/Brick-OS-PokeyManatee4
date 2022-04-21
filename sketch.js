@@ -21,7 +21,7 @@ function corporationDownload() {
 const chartSettings = {
     type: 'bar',
     data: {
-        labels: ['Windows 10', 'Windows 7', 'MacOS','Ubuntu', 'Chrome OS', 'Hello World OS'],
+        labels: ['Windows 10', 'Windows 7', 'MacOS','Ubuntu', 'Chrome OS', 'Brick OS'],
         datasets: [
             {
                 data: [15.64 * 1024, 10.50 * 1024, 12.23 * 1024, 4.5 * 1024, 4 * 1024, 16/1024],
@@ -125,9 +125,6 @@ function isScrolledIntoView(el) {
     var elemTop = rect.top;
     var elemBottom = rect.bottom;
 
-    // Only completely visible elements return true:
-    // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-    // Partially visible elements return true:
     var isVisible = elemTop < window.innerHeight / 2;
     return isVisible;
 }
